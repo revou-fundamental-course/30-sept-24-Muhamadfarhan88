@@ -7,27 +7,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!--Elemen Heading 2 yang menampilkan judul "Konverter Suhu" -->
     <div class="container">
         <h2>Konverter Suhu</h2>
         <p>Masukkan suhu derajat Celsius (°C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</p>
+<!--Elemen div yang mengelompokkan bidang input dan label bersama-sama-->
         <div class="input-group">
             <label for="celsius">Celsius (°C):</label>
+<!--Elemen label yang menyediakan deskripsi teks untuk bidang input-->
             <input type="number" id="celsius" placeholder="0">
         </div>
         <div class="button-group">
+<!--Elemen tombol dengan id "convert" yang memicu fungsi konversi-->
             <button id="convert">Konversi</button>
+<!--Elemen tombol dengan id "reset" yang mengatur ulang bidang input dan output-->
             <button id="reset">Reset</button>
+<!--Elemen tombol dengan id "reverse" yang membalikkan konversi (misalnya, dari Fahrenheit ke Celsius)-->
             <button id="reverse">Reverse</button>
         </div>
         <div class="input-group">
             <label for="fahrenheit">Fahrenheit (°F):</label>
             <input type="text" id="fahrenheit" readonly>
         </div>
+<!--menampilkan metode perhitungan-->
         <div class="calculation-method">
             <label>Cara kalkulasi:</label>
             <div id="calculation-formula"></div>
         </div>
-        
+<!--Elemen div yang menyediakan informasi tambahan tentang konversi-->
         <div class="additional-info">
             <h3>Cara Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h3>
             <p>Suhu S dalam derajat Fahrenheit (°F) sama dengan suhu S dalam derajat Celsius (°C) kali 9/5 tambah 32.</p>
